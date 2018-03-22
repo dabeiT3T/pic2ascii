@@ -23,10 +23,10 @@ $p2a = new Pic2Ascii();
 $res = imagecreatefromjpeg('/path/to/picture');
 $p2a->setImage($res);
 // get the zoom out ratio
-$p2a->getRatio();		// return => null  (when gdResource is null)
-						//	  |-- => ratio (when user sets the ratio)
-						//    |-- => auto-ratio 
-						// (when user hasn't set the ratio and gdRsource is not null)
+$p2a->getRatio();       // return => null  (when gdResource is null)
+                        //    |-- => ratio (when user sets the ratio)
+                        //    |-- => auto-ratio 
+                        // (when user hasn't set the ratio and gdRsource is not null)
 // set the ratio
 $p2a->setRatio(4);
 // set the ratio on auto
